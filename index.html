@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scalable Grow — A platform to help startups grow bigger.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="home.html">
+        <img src="assets/SCALABLEGROW final logo.svg" alt="Scalable Grow Logo">
+        Scalable Grow
+        <span class="brand-dot"></span>
+      </a>
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="about.html">About us</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">
+        <i class="fa-solid fa-star"></i>
+        Trusted by 1,200+ startups worldwide
+      </div>
+      <h1>Grow Your Startup <span class="highlight">Faster</span> 🚀</h1>
+      <p>We help startups scale with modern web solutions, sharp marketing, and cutting-edge technology.</p>
+      <div class="hero-actions">
+        <a href="#" class="cta-btn">
+          <i class="fa-solid fa-bolt"></i>
+           Let's Explore
+        </a>
+        <a href="#" class="cta-btn">
+          <i class="fa-solid fa-bolt"></i>
+          Contact Us 
+        </a>
+       
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-number">1.2K+</span>
+        <span class="stat-label">Startups launched</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3.8×</span>
+        <span class="stat-label">Avg. growth rate</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Client satisfaction</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Expert support</span>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features-section">
+      <p class="section-label">What we offer</p>
+      <h2 class="section-title">Everything you need to scale</h2>
+      <p class="section-sub">Powerful tools and expert services designed for ambitious startups.</p>
+
+      <div class="features">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Modern, scalable websites built with the latest technologies — fast, accessible, and conversion-ready.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3>Growth Strategy</h3>
+          <p>Data-driven strategies that help you reach product-market fit, attract investors, and scale sustainably.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <h3>Marketing</h3>
+          <p>Reach the right users at the right time with powerful digital marketing, SEO, and content solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-brand">
+        Scalable Grow <span class="brand-dot"></span>
+      </div>
+      <p class="footer-copy">© 2026 Scalable Grow. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector("#hamburger-menu");
+      const navMenu = document.querySelector(".navbar-nav");
+      menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      // Scroll-based fade-in for feature boxes
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = `fadeUp 0.6s ${i * 0.12}s ease both`;
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.feature-box').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>

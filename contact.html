@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureDesks — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════
+     NAVBAR
+══════════════════════════════════ -->
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="home.html">
+        <img class="brand-logo" src="assets/SCALABLEGROW final logo.svg" alt="Scalable Grow Logo">
+        <p class="brand-name">calable Grow</p>
+        <span class="brand-dot"></span>
+      </a>
+
+      <!-- id="nav-menu" lets the hamburger script target it precisely -->
+      <ul class="navbar-nav" id="nav-menu">
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="projects.html">Development Projects</a></li>
+        <li><a class="nav-link" href="about.html">About us</a></li>
+      </ul>
+
+      <!-- icon toggles between fa-bars / fa-xmark via JS -->
+      <i class="fa-solid fa-bars" id="hamburger-menu" aria-label="Toggle menu"></i>
+    </nav>
+
+  <!-- ═════════════════════════════════=   
+     CONTACT SECTION
+══════════════════════════════════ -->
+  <section class="contact">
+    <div class="contact-inner">
+
+      <!-- ROW 1: HEADLINE -->
+      <div class="contact-head">
+        <span class="contact-label">
+          <i class="fa-solid fa-envelope" style="font-size:9px;"></i> Contact Form
+        </span>
+        <h2>Have a question?<br><em>Contact us now</em></h2>
+        <p>Our friendly team is ready to help — just fill in the form below and we'll get back to you shortly.</p>
+      </div>
+
+      <!-- ROW 2: FORM -->
+      <div class="contact-form-card">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="input-group">
+              <label for="c-name">Your Name</label>
+              <input type="text" id="c-name" placeholder="Rahul Sharma" required>
+            </div>
+            <div class="input-group">
+              <label for="c-phone">Phone Number</label>
+              <input type="tel" id="c-phone" placeholder="+91 98765 00000">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="c-email">Email Address</label>
+              <input type="email" id="c-email" placeholder="you@email.com" required>
+            </div>
+            <div class="input-group">
+              <label for="c-subject">Subject</label>
+              <input type="text" id="c-subject" placeholder="What's this about?">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" placeholder="Tell us about your project or question…" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <h3>Message sent!</h3>
+          <p>We'll get back to you within 2 hours on business days.</p>
+        </div>
+      </div>
+
+      <!-- ROW 3: COMPACT ADDRESS STRIP -->
+      <div class="contact-footer">
+
+        <div class="contact-tile">
+          <div class="tile-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="tile-text">
+            <strong>Agra Office</strong>
+            <span>Sector 12A, Awas Vikas Colony, Sikandra, Agra UP–282007</span>
+          </div>
+        </div>
+
+        <div class="contact-tile">
+          <div class="tile-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="tile-text">
+            <strong>Uttarakhand</strong>
+            <span>Kotdawar, Uttarakhand</span>
+          </div>
+        </div>
+
+        <div class="contact-tile">
+          <div class="tile-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="tile-text">
+            <strong>Email</strong>
+            <a href="mailto:partnerships@futuredesks.in">partnerships@futuredesks.in</a>
+          </div>
+        </div>
+
+        <div class="contact-tile">
+          <div class="tile-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="tile-text">
+            <strong>Phone</strong>
+            <a href="tel:+918595669310">+91 8595669310</a>
+            <a href="tel:+918923612313">+91 8923612313</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+    <div class="footer-wrap">
+      <div class="footer-grid">
+
+        <!-- Col 1 · About -->
+        <div class="footer-col">
+          <h4>About us</h4>
+          <p>We help startups scale with modern web solutions, sharp marketing, and cutting-edge technology.</p>
+          <div class="socials">
+            <div class="social-icon" style="background:#3b5998;">
+              <svg viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <div class="social-icon" style="background:#1DA1F2;">
+              <svg viewBox="0 0 24 24" fill="white"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.37 4.07 3.58 1.64.9a4.52 4.52 0 0 0-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.5 4.5 0 0 1-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.55 4.55 0 0 1-2.04.08 4.53 4.53 0 0 0 4.23 3.14A9.07 9.07 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.02-.58A9.17 9.17 0 0 0 23 3z"/></svg>
+            </div>
+            <div class="social-icon" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div class="social-icon" style="background:#0A66C2;">
+              <svg viewBox="0 0 24 24" fill="white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2 · Useful Links -->
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy &amp; Policy</a></li>
+            <li><a href="#">Terms &amp; Condition</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 · Services (renamed from "Shop" to match this site) -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Growth Strategy</a></li>
+            <li><a href="services.html">Marketing</a></li>
+            <li><a href="projects.html">Dev Projects</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 · Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+
+          <div class="contact-item">
+            <!-- Pin — site primary indigo -->
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="#4F46E5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3" fill="white"/>
+            </svg>
+            <span>288 Bishopsgate, London</span>
+          </div>
+
+          <div class="contact-item">
+            <!-- Phone — site primary indigo -->
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="#4F46E5">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
+            </svg>
+            <span>+1 234 567 7890</span>
+          </div>
+
+          <div class="contact-item">
+            <!-- Email — site accent amber -->
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.8">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Info@example.com</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar — indigo gradient mirrors the navbar -->
+      <div class="footer-bottom">
+        <p>© 2026 Scalable Grow | All Rights Reserved</p>
+      </div>
+    </div>
+
+  <script>
+     // ── Hamburger toggle ──────────────────────────────
+      const menuBtn = document.querySelector("#hamburger-menu");
+      const navMenu = document.querySelector("#nav-menu");
+
+      menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle("active");
+        // Swap icon: bars ↔ xmark
+        menuBtn.classList.toggle("fa-bars");
+        menuBtn.classList.toggle("fa-xmark");
+      });
+
+      // Close when clicking anywhere outside the nav
+      document.addEventListener("click", (e) => {
+        if (!menuBtn.contains(e.target) && !navMenu.contains(e.target)) {
+          navMenu.classList.remove("active");
+          menuBtn.classList.add("fa-bars");
+          menuBtn.classList.remove("fa-xmark");
+        }
+      });
+
+      // Close when a nav link is tapped (mobile UX)
+      navMenu.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          menuBtn.classList.add("fa-bars");
+          menuBtn.classList.remove("fa-xmark");
+        });
+      });
+
+      // ── Feature-box scroll fade-in ────────────────────
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = `fadeUp 0.6s ${i * 0.12}s ease both`;
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll(".feature-box").forEach(el => observer.observe(el));
+
+    /* ── Contact form submit ── */
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('.contact-btn');
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+      btn.disabled = true;
+      setTimeout(() => {
+        this.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'flex';
+      }, 1300);
+    });
+  </script>
+
+</body>
+
+</html>
